@@ -1,4 +1,6 @@
 /* eslint-disable camelcase */
+
+//TODO: not used - remove this
 export interface Article {
   id: string
   type_of: string

@@ -1,10 +1,10 @@
 # Jesse Holwell's Personal Site
 
-Hey there! KL here. This is a v1 of my portfolio site, which is shamefully a template I edited to get something out there fast, and I plan to revist and rewrite. I wanted to practice some newer web technologies and also get my information out there to add credibility to my freelance services, so I thought why not start with my porfolio.
+Hey there! Jesse here. This is a v1 of my portfolio site, which is shamefully a template I edited to get something out there fast, and I plan to revist and rewrite. I wanted to practice some newer web technologies and also get information of my skills out there to add credibility to my freelance services, so I thought why not start with my porfolio.
 
 This is written in Typescript using [Next.js](https://nextjs.org/), as a SSG tool. It utilizes [ChakraUI](https://chakra-ui.com/) as well as [Framer Motion](https://www.framer.com/motion/) for animations.
 
-Site is Currently deployed with AWS Amplify.
+Site is currently deployed with AWS Amplify.
 
 TODO: Add url
 

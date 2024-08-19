@@ -135,14 +135,18 @@ const FeaturedCard = ({
 }: FeaturedCardProps) => {
   const isLeftImage = isMobile ? false : idx % 2 === 0
   const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200')
+  const imgBg = useColorModeValue('blackAlpha.40', 'whiteAlpha.300')
+
   const CoverImage = () => (
     <MotionImage
       height={height}
       width="100%"
       src={src}
       alt={title}
-      objectFit="cover"
+      objectFit="contain"
       objectPosition={objectPosition}
+      p={5}
+      bg={imgBg}
       loading="lazy"
       opacity={0.75}
       whileHover={variants.hover}

@@ -1,163 +1,131 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
+export type Company = 'PI' | 'Typsy' | 'EY'
 
 export type CompanyDetail = {
   name: string
-  longName: string
-  subDetail?: string
+  // longName: string
+  // subDetail?: string
   url: string
   position: string
   duration: string
-  logo: {
-    light: string
-    dark?: string
-  }
+  logo: string
+  // {
+  //   light: string
+  //   dark?: string
+  // }
   roles?: JSX.Element[]
 }
 
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  Deloitte: {
-    name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software Engineer Consultant',
-    duration: 'Sep 2021 - Present',
-    logo: {
-      light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
-      dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
-    },
-    roles: [
-      <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
-      </>,
-      <>
-        Worked as a Sitecore Backend on new{' '}
-        <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Deloitte Digital AU Site.
-        </Link>
-      </>,
-      <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
-        <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link>
-      </>,
-    ],
-  },
-  SCG: {
-    name: 'Scentregroup',
-    longName: 'Scentregroup Limited AU',
-    subDetail: 'via Prosource BPO',
-    url: 'https://www.scentregroup.com/',
-    position: 'Software Engineer',
-    duration: 'Feb 2020 - Sep 2021',
-    logo: {
-      light: '/worked_at_logos/scg/SCG_400x400.jpg',
-      dark: '/worked_at_logos/scg/SCG.png',
-    },
-    roles: [
-      <>
-        Revamping the legacy Partner Portal into a new{' '}
-        <Link
-          aria-label="Westfield Marketing Hub"
-          href="https://partner.scentregroup.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield Marketing Hub
-        </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
-        newer architectural design approach.
-      </>,
-      <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
-      </>,
-      <>
-        Worked on maintaining{' '}
-        <Link
-          variant="primaryLink"
-          href="https://www.westfield.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield
-        </Link>{' '}
-        main site and Graphql apis written in NodeJS.
-      </>,
-      <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
-      </>,
-    ],
-  },
-  Blotocol: {
-    name: 'Blotocol',
-    longName: 'Blotocol Philippines',
-    subDetail: 'formerly IVP Global Inc.',
-    url: 'https://blotocol.com/',
+  PI: {
+    name: 'Planet Innovation',
+    // longName: 'Healthtech Innovation Consultancy',
+    // subDetail: 'Medical device manufacturing',
+    url: 'https://www.planetinnovation.com.au/',
     position: 'Senior Software Engineer',
-    duration: 'Nov 2016 - Feb 2020',
-    logo: {
-      light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-      dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
-    },
+    duration: 'Aug 2020 - Mar 2023',
+    logo: '/worked_at_logos/planetinnovation/planetinnovation-logo.png',
+    // {
+    //   light:
+    //     '/worked_at_logos/planetinnovation/PlanetInnovation_logo_black.png',
+    //   dark: '/worked_at_logos/planetinnovation/PlanetInnovation_logo.png',
+    // },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
+        Specialized in web technologies, secondarily in Windows IoT embedded
+        systems, and also had the opportunity to work with iOS and Android app
+        development
       </>,
       <>
-        In 2019 got promoted as Senior Software Engineer and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
+        Consistently exceeded KPIs, noted for consistently delivering
+        high-quality work ahead of schedule
       </>,
       <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
+        Led the design and development of a comprehensive new instrument
+        commissioning process, including Windows imaging and machine setup
       </>,
       <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
+        Maintained BDD and TDD practices to implement testing at every level for
+        compliance with stringent medical industry standards
+      </>,
+      <>
+        Provided coaching and detailed code reviews for junior team members and
+        interns
+      </>,
+    ],
+  },
+  Typsy: {
+    name: 'Typsy',
+    // longName: 'longnanem',
+    // subDetail: 'subdetail',
+    url: 'https://www.typsy.com/',
+    position: 'Software Engineer',
+    duration: 'Mar 2019 - Aug 2020',
+    logo: '/worked_at_logos/typsy/typsy-logo.png',
+    // {
+    //   light: '/worked_at_logos/scg/SCG_400x400.jpg',
+    //   dark: '/worked_at_logos/scg/SCG.png',
+    // },
+    roles: [
+      <>
+        Implemented and maintained features of the SaaS platform, ranging from
+        an MVC frontend to the identity server to serverless functions to cloud
+        based storage and later included mobile apps for both Android and iOS
+        using Xamarin
+      </>,
+      <>
+        Pitched, designed and implemented an image delivery solution that
+        automated the optimization of images across all components that was
+        simple for developers to use and caused a load time decrease of 50% and
+        resource size decrease of 70% on our most content heavy page
+      </>,
+      <>
+        Monitored the health of the platform using Azure to ensure stability and
+        resilience in each component of the platform
+      </>,
+      <>
+        Reviewed colleagues' code and gave feedback centered around code
+        performance, best practices and SOLID design principles
+      </>,
+    ],
+  },
+  EY: {
+    name: 'EY',
+    // longName: 'longname',
+    // subDetail: 'subdetail',
+    url: 'https://eysweeney.com.au/',
+    position: 'Junior Web Consultant',
+    duration: 'Mar 2017 - Sep 2018',
+    logo: '/worked_at_logos/ey/ey-logo.png',
+    // {
+    //   light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
+    //   dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
+    // },
+    roles: [
+      <>
+        A member of the digital division focused on MVC market research websites
+        with supporting MSSQL databases that included a survey section where
+        respondents enter data, and an authorized portal where consultants
+        review the insights presented in meaningful dashboards with charts
+      </>,
+      <>
+        Created and managed best practices documentation for the team, including
+        security and general development principles to ensure high quality work
+        outputs
+      </>,
+      <>
+        Championed implementation of agile methodologies in the team, such as
+        task management and CI/CD, using the VSTS platform
       </>,
     ],
   },
 }
 
 export const ExperiencesList = [
-  Experiences.Deloitte,
-  Experiences.SCG,
-  Experiences.Blotocol,
+  Experiences.PI,
+  Experiences.Typsy,
+  Experiences.EY,
 ]

@@ -31,8 +31,7 @@ const FeaturedWorksSection = () => {
         Some of my works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company projects and
-        even case studies.
+        Check out some of the things I've made while freelancing
       </Text>
 
       <MotionGrid
@@ -44,13 +43,12 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            title="Dichotomy cards"
+            src="/works/dichotomy-card-rear.jpg"
+            description="Dichotomy is a unique card game where players delve into a world of contrasting ideas, making choices that reveal their deepest values and perspectives."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://tobira-app-test.netlify.app/"
-            objectPosition="right 20%"
+            ctaUrl="https://www.dichotomycards.com/"
+            objectPosition="center"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -58,15 +56,15 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            title="Your website could go here!"
+            description="Send me a message and we can see if we are a good fit for each other."
+            src="/works/web-skeleton.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://solution.rsv.ltd/jp"
+            ctaUrl="mailto:jesse.d.holwell@gmail.com"
             isMobile={isMobile}
           />
         </MotionGridItem>
-
+        {/* 
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
@@ -90,7 +88,7 @@ const FeaturedWorksSection = () => {
             ctaUrl="https://www.layla-ec.com/"
             isMobile={isMobile}
           />
-        </MotionGridItem>
+        </MotionGridItem> */}
       </MotionGrid>
     </Stack>
   )

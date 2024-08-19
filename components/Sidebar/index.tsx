@@ -61,7 +61,7 @@ const Sidebar = () => {
             variant="accent"
             fontWeight="light"
           >
-            Ohh you found me?. Howdy! I am
+            Hey! I am
           </MotionText>
           <MotionHeading
             as="h1"
@@ -70,7 +70,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Marc Jhon
+            Jesse
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -82,16 +82,16 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Lawingco.
+            Holwell.
           </MotionHeading>
-          <MotionText
+          {/* <MotionText
             colorScheme="gray"
             fontSize="smaller"
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
             Or you could call me KL. That works too . . .
-          </MotionText>
+          </MotionText> */}
 
           <MotionHeading
             as="h3"
@@ -110,13 +110,14 @@ const Sidebar = () => {
             variants={fadeInUp}
             maxWidth={{ base: '100%', lg: '80%' }}
           >
-            Hey! How nice of you to look at my personal site,
+            How nice of you to look at my personal site,
             <Text variant="emphasis" as="span">
               {' '}
               Thank you!
             </Text>
-            <br />I am software engineer that specializes at backend apis, front
-            end integration, recently found myself studying UX too.
+            <br />
+            I'm software engineer passionate about user experience, automation,
+            sustainability and music
           </MotionText>
           <MotionButton
             size="lg"
@@ -128,7 +129,7 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:marcjhon18@gmail.com"
+            href="mailto:jesse.d.holwell@gmail.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

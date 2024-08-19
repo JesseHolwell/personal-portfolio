@@ -84,7 +84,7 @@ const ScrollMore = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {scrollDirection === ScrollDirection.Down && (
           <motion.div
             initial="hidden"
@@ -134,7 +134,7 @@ const ScrollMore = () => {
             </Text>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </Box>
   )
 }

@@ -21,6 +21,8 @@ import {
   SiNextDotJs,
   SiNodeDotJs,
   SiDocker,
+  SiMicrosoftsqlserver,
+  SiMicrosoftazure,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -32,7 +34,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2015
 
   return (
     <Stack
@@ -51,31 +53,15 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         What i do.
       </Heading>
       <Text variant="description">
-        I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Software Engineer</b> that focuses on{' '}
-        <b>architecture</b>, <b>APIs</b>,{' '}
-        <Tooltip
-          label="Ha!. Or more accurately TECH DEBT"
-          aria-label="Tech Debt?"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            <b>nitty-gritty business logics</b>
-          </Text>
-        </Tooltip>{' '}
-        and even <b>front end integration</b> stuff now, how time flies!
+        I`ve been coding professionally for {professionalYears} years now,
+        specializing in creating tailored web solutions that align with your
+        unique business needs. Now, as a freelance contractor, I bring my
+        expertise to deliver bespoke websites that are not just visually
+        engaging but also optimized for performance, user experience, and
+        scalability. Let's work together to turn your vision into a reality.
         <br /> <br />
-        Here are few technologies that are cup of my{' '}
-        <Tooltip
-          label="I only drink tea if I needed too!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
-          </Text>
-        </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        Here are few technologies that are cup of my coffee{' '}
+        <Icon as={GiCoffeePot} color={emphasis} />.
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
@@ -92,17 +78,12 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
             Typescript
           </ListItem>
-
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
             Node
           </ListItem>
         </List>
         <List spacing={3}>
-          <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
-          </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
@@ -112,11 +93,19 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             NextJS
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
-            Docker
+            <ListIcon as={SiMicrosoftazure} color={emphasis} fontSize="2em" />
+            Azure
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon
+              as={SiMicrosoftsqlserver}
+              color={emphasis}
+              fontSize="2em"
+            />
+            SQL
           </ListItem>
         </List>
-        <Box>
+        {/* <Box>
           <Text
             as="button"
             variant="emphasis"
@@ -126,7 +115,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           >
             See my full arsenal <Icon as={IoMdOpen} />
           </Text>
-        </Box>
+        </Box> */}
       </SimpleGrid>
     </Stack>
   )

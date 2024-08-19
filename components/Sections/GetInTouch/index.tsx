@@ -24,6 +24,8 @@ const rimuruVariant: Variants = {
   },
 }
 
+const currentYear = new Date().getFullYear()
+
 const GetInTouch = () => {
   const [ref, inView] = useInView()
   return (
@@ -40,30 +42,20 @@ const GetInTouch = () => {
         }}
       >
         Say hi!{' '}
-        <Text as="span" fontSize="2xl" variant="emphasis">
-          <motion.div
-            style={{ display: 'inline-block' }}
-            variants={rimuruVariant}
-            ref={ref}
-            animate={inView ? ['shake', 'jump'] : false}
-          >
-            (⁀ᗢ⁀)
-          </motion.div>
-        </Text>
       </Heading>
       <Text variant="description">
-        Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
+        I'm available for hire for software work!
+        <br />I also love to play guitar, perform in fire shows, and teach yoga.
+        <br />
+        If you want to make something great together, send me an{' '}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="mailto:jesse.d.holwell@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
           email
         </Link>
-        .
+        !
       </Text>
 
       <Box
@@ -77,14 +69,14 @@ const GetInTouch = () => {
           variant="description"
           textDecoration="none"
           rel="noreferrer"
-          href="https://github.com/klawingco/kl_portfolio"
+          href="https://github.com/jesseholwell/personal-portfolio"
           target="_blank"
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            KL Lawingco <Icon as={RiCopyleftLine} /> 2021
+            Made with <Icon as={RiHeartPulseFill} /> <br />
+            Jesse Holwell <Icon as={RiCopyleftLine} /> {currentYear}
           </Text>
         </Link>
       </Box>

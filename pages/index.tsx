@@ -19,7 +19,6 @@ import FeaturedWorks from 'components/Sections/FeaturedWorks'
 import ScrollMore from 'components/Misc/ScrollMore'
 import { Article } from 'types/article'
 // These are on bottom sections so no need to render it instantly
-const DevToArticles = dynamic(() => import('components/Sections/DevToArticles'))
 const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
 
 const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
@@ -33,7 +32,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
   const paddTop = useBreakpointValue({ base: '20', sm: 20, md: 20 })
   return (
     <>
-      <Script
+      {/* <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}
       />
       <Script id="google-analytics">
@@ -43,7 +42,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
           gtag('js', new Date());
           gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_ID}');
         `}
-      </Script>
+      </Script> */}
       <OpenGraphHead />
       <Menu />
       <Grid
@@ -121,7 +120,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
                 <FeaturedWorks />
               </Box>
             </FadeInLayout>
-            <FadeInLayout>
+            {/* <FadeInLayout>
               <Box
                 id="blog"
                 className="contentRow"
@@ -132,7 +131,7 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
               >
                 <DevToArticles articles={articles} />
               </Box>
-            </FadeInLayout>
+            </FadeInLayout> */}
             <FadeInLayout>
               <Box
                 id="contact"
@@ -150,16 +149,6 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
       <ScrollMore />
     </>
   )
-}
-
-export async function getStaticProps() {
-  const res = await fetch('https://dev.to/api/articles?username=klawingco')
-  const articles = await res.json()
-  return {
-    props: {
-      articles,
-    },
-  }
 }
 
 export default Portfolio

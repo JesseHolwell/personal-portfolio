@@ -75,9 +75,9 @@ const ExperienceTab = () => {
           >
             <Image
               src={
-                colorMode === 'dark' ? company.logo.dark : company.logo.light
+                company.logo //colorMode === 'dark' ? company.logo.dark : company.logo.light
               }
-              alt={company.longName}
+              alt={company.name}
               maxWidth="88px"
               fallback={<Skeleton height="100%" width="100%" />}
             ></Image>
@@ -108,7 +108,7 @@ const ExperienceTab = () => {
                   >
                     #{company.name}
                   </Link>
-                  <Text
+                  {/* <Text
                     as="span"
                     textTransform="none"
                     fontSize="x-small"
@@ -116,7 +116,7 @@ const ExperienceTab = () => {
                   >
                     {' '}
                     {company.subDetail}
-                  </Text>
+                  </Text> */}
                 </Text>
                 <Text fontSize="smaller">{company.duration}</Text>
               </Stack>

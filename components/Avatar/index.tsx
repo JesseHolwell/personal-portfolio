@@ -11,8 +11,8 @@ import { useEffect } from 'react'
 import { avatarAnimation } from 'config/animations'
 
 const AvatarImages = {
-  DarkMode: '/KL_avatar.png',
-  LightMode: './KL_avatar_light.png',
+  DarkMode: '/me-circle.png',
+  LightMode: './me-circle.png',
 }
 
 declare global {
@@ -51,13 +51,13 @@ const Avatar = () => {
       >
         <ChkImage
           src={imgAvatar}
-          alt="KL Lawingco Avatar"
+          alt="Jesse Holwell Avatar"
           htmlWidth="250"
           htmlHeight="250"
           margin="auto"
           fallback={<SkeletonCircle height="100%" width="100%" />}
         />
-        <Text textAlign="center" fontSize="smaller" variant="description">
+        {/* <Text textAlign="center" fontSize="smaller" variant="description">
           Art by{' '}
           <Link
             href="https://twitter.com/kojiro_ai"
@@ -67,7 +67,7 @@ const Avatar = () => {
           >
             KojiroArt
           </Link>
-        </Text>
+        </Text> */}
       </MotionBox>
     </AnimatePresence>
   )
