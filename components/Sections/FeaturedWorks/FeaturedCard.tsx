@@ -63,7 +63,7 @@ const ProjectDescription = ({
   idx?: number
   title: string
   description: string
-  ctaUrl: string
+  ctaUrl?: string
   isLeft: boolean
 }) => (
   <Container
