@@ -25,7 +25,7 @@ export type FeaturedCardProps = {
   title: string
   description: string
   objectPosition?: string
-  ctaUrl: string
+  ctaUrl?: string
   isMobile?: boolean
 }
 
@@ -107,19 +107,23 @@ const ProjectDescription = ({
     >
       {description}
     </Text>
-    <Button
-      variant="outlineAlternative"
-      fontWeight="light"
-      fontSize={{ base: 'sm', '2xl': 'md' }}
-      size="sm"
-      as="a"
-      href={ctaUrl}
-      rel="noreferrer"
-      target="_blank"
-      marginY={{ base: 3, md: 0 }}
-    >
-      View Project
-    </Button>
+    {ctaUrl ? (
+      <Button
+        variant="outlineAlternative"
+        fontWeight="light"
+        fontSize={{ base: 'sm', '2xl': 'md' }}
+        size="sm"
+        as="a"
+        href={ctaUrl}
+        rel="noreferrer"
+        target="_blank"
+        marginY={{ base: 3, md: 0 }}
+      >
+        View Project
+      </Button>
+    ) : (
+      <Box></Box>
+    )}
   </Container>
 )
 

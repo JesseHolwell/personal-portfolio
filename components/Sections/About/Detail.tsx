@@ -32,7 +32,7 @@ type ISkillSetModal = {
 }
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
+  const emphasis = useColorModeValue('green.500', 'green.200')
   const currentYear = new Date().getFullYear()
   const professionalYears = currentYear - 2015
 

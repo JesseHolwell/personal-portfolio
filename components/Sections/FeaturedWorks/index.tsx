@@ -43,7 +43,7 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Dichotomy cards"
+            title="Dichotomy card game"
             src="/works/dichotomy-card-rear.jpg"
             description="Dichotomy is a unique card game where players delve into a world of contrasting ideas, making choices that reveal their deepest values and perspectives."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
@@ -56,11 +56,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="Your website could go here!"
-            description="Send me a message and we can see if we are a good fit for each other."
+            title="Your dream project could go here!"
+            description="Reach out to discuss your project, and let's see if we're a good fit to bring your vision to life."
             src="/works/web-skeleton.png"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="mailto:jesse.d.holwell@gmail.com"
+            // ctaUrl="mailto:jesse.d.holwell@gmail.com"
             isMobile={isMobile}
           />
         </MotionGridItem>
