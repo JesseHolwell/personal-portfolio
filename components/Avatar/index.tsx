@@ -11,8 +11,8 @@ import { useEffect } from 'react'
 import { avatarAnimation } from 'config/animations'
 
 const AvatarImages = {
-  DarkMode: '/me-circle.png',
-  LightMode: './me-circle.png',
+  DarkMode: '/me-monkey.png',
+  LightMode: './me-monkey.png',
 }
 
 declare global {
@@ -55,6 +55,7 @@ const Avatar = () => {
           htmlWidth="250"
           htmlHeight="250"
           margin="auto"
+          borderRadius="50%"
           fallback={<SkeletonCircle height="100%" width="100%" />}
         />
         {/* <Text textAlign="center" fontSize="smaller" variant="description">

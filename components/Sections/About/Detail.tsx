@@ -54,11 +54,11 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       </Heading>
       <Text variant="description">
         I`ve been coding professionally for {professionalYears} years now,
-        specializing in creating tailored web solutions that align with your
-        unique business needs. Now, as a freelance contractor, I bring my
-        expertise to deliver bespoke websites that are not just visually
-        engaging but also optimized for performance, user experience, and
-        scalability. Let's work together to turn your vision into a reality.
+        specializing in creating tailored web solutions that align with unique
+        business needs. Now, as a freelance contractor, I bring my expertise to
+        deliver bespoke websites that are not just visually engaging but also
+        optimized for performance, user experience, and scalability. Let's work
+        together to turn your vision into a reality.
         <br /> <br />
         Here are few technologies that are cup of my coffee{' '}
         <Icon as={GiCoffeePot} color={emphasis} />.

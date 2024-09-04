@@ -75,7 +75,7 @@ const ExperienceTab = () => {
           >
             <Image
               src={
-                company.logo //colorMode === 'dark' ? company.logo.dark : company.logo.light
+                colorMode === 'dark' ? company.logo.dark : company.logo.light
               }
               alt={company.name}
               maxWidth="88px"

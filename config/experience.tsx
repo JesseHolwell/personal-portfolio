@@ -9,11 +9,10 @@ export type CompanyDetail = {
   url: string
   position: string
   duration: string
-  logo: string
-  // {
-  //   light: string
-  //   dark?: string
-  // }
+  logo: {
+    light: string
+    dark?: string
+  }
   roles?: JSX.Element[]
 }
 
@@ -27,12 +26,10 @@ export const Experiences: {
     url: 'https://www.planetinnovation.com.au/',
     position: 'Senior Software Engineer',
     duration: 'Aug 2020 - Mar 2023',
-    logo: '/worked_at_logos/planetinnovation/planetinnovation-logo.png',
-    // {
-    //   light:
-    //     '/worked_at_logos/planetinnovation/PlanetInnovation_logo_black.png',
-    //   dark: '/worked_at_logos/planetinnovation/PlanetInnovation_logo.png',
-    // },
+    logo: {
+      light: '/worked_at_logos/planetinnovation/planetinnovation-logo.png',
+      dark: '/worked_at_logos/planetinnovation/planetinnovation-logo.png',
+    },
     roles: [
       <>
         Specialized in web technologies, secondarily in Windows IoT embedded
@@ -64,11 +61,10 @@ export const Experiences: {
     url: 'https://www.typsy.com/',
     position: 'Software Engineer',
     duration: 'Mar 2019 - Aug 2020',
-    logo: '/worked_at_logos/typsy/typsy-logo.png',
-    // {
-    //   light: '/worked_at_logos/scg/SCG_400x400.jpg',
-    //   dark: '/worked_at_logos/scg/SCG.png',
-    // },
+    logo: {
+      light: '/worked_at_logos/typsy/typsy-logo.png',
+      dark: '/worked_at_logos/typsy/typsy-logo.png',
+    },
     roles: [
       <>
         Implemented and maintained features of the SaaS platform, ranging from
@@ -99,11 +95,10 @@ export const Experiences: {
     url: 'https://eysweeney.com.au/',
     position: 'Junior Web Consultant',
     duration: 'Mar 2017 - Sep 2018',
-    logo: '/worked_at_logos/ey/ey-logo.png',
-    // {
-    //   light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-    //   dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
-    // },
+    logo: {
+      light: '/worked_at_logos/ey/ey-light.png',
+      dark: '/worked_at_logos/ey/ey-dark.png',
+    },
     roles: [
       <>
         A member of the digital division focused on MVC market research websites
