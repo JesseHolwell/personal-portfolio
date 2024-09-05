@@ -31,6 +31,18 @@ const config = {
 
 const colors = {
   black: '#121212',
+  gray: {
+    50: '#FAFAFA',
+    100: '#EDEDED',
+    200: '#E2E2E2',
+    300: '#CBCBCB',
+    400: '#A0A0A0',
+    500: '#717171',
+    600: '#4A4A4A',
+    700: '#2D2D2D',
+    800: '#1A1A1A',
+    900: '#171717',
+  },
 }
 
 const styles = {
@@ -104,6 +116,7 @@ const theme = extendTheme({
           },
         }),
       },
+      baseStyle: { _focus: { boxShadow: 'none' } },
     },
     Icon: {
       variants: {
