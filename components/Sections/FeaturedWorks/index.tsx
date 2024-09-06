@@ -56,6 +56,19 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
+            title="Trinkets by Challis"
+            src="/works/trinkets-by-challis.png"
+            description="Challis creates beautiful, handcrafted jewelry that blends delicate wire wrapping with stunning gemstones and trinkets. Each piece is thoughtfully designed to reflect both elegance and individuality, offering wearable art that tells a personal story."
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://www.trinkets-by-challis.vercel.app/"
+            objectPosition="center"
+            isMobile={isMobile}
+          />
+        </MotionGridItem>
+
+        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <FeaturedCard
+            idx={3}
             title="Your dream project could go here!"
             description="Reach out to discuss your project, and let's see if we're a good fit to bring your vision to life."
             src="/works/web-skeleton.png"
