@@ -44,7 +44,7 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={1}
             title="Dichotomy card game"
-            src="/works/dichotomy-card-rear.jpg"
+            src="/works/dichotomy.jpg"
             description="Dichotomy is a unique card game where players delve into a world of contrasting ideas, making choices that reveal their deepest values and perspectives."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://www.dichotomycards.com/"
@@ -57,10 +57,10 @@ const FeaturedWorksSection = () => {
           <FeaturedCard
             idx={2}
             title="Trinkets by Challis"
-            src="/works/trinkets-by-challis.png"
-            description="Challis creates beautiful, handcrafted jewelry that blends delicate wire wrapping with stunning gemstones and trinkets. Each piece is thoughtfully designed to reflect both elegance and individuality, offering wearable art that tells a personal story."
+            src="/works/trinkets-by-challis.jpg"
+            description="Challis creates beautiful, handcrafted jewelry that blends delicate wire wrapping with stunning gemstones and trinkets."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.trinkets-by-challis.vercel.app/"
+            ctaUrl="https://trinkets-by-challis.vercel.app/"
             objectPosition="center"
             isMobile={isMobile}
           />
