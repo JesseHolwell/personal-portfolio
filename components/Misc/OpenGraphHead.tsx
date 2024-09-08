@@ -8,12 +8,12 @@ const OpenGraphHead = () => (
     <meta property="og:url" content="https://www.jesseholwell.com/" />
     <meta
       property="og:description"
-      content="Hey! I am Jesse Holwell, Software Engineer"
+      content="Hey! Want to make something great together?"
     />
     <meta property="og:type" content="profile" />
     <meta
       property="og:image"
-      content="https://www.jesseholwell.com/me-circle.png"
+      content="https://www.jesseholwell.com/me-monkey.png"
     ></meta>
   </Head>
 )
